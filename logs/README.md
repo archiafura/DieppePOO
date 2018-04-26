@@ -1,0 +1,1 @@
+Penser à ajouter un répertoire "logs" pour l'écriture des logs avec les droits adéquats.
