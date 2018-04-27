@@ -33,11 +33,21 @@ class Querie
     public function selectMethod($sql)
     {
 
-    }
+        if (!empty($sql)) {
 
+            $this->db->prepare($sql);
+            $this->db->execute();
+            return $this->db->fetchAll();
+
+        }
+
+        else{
+            return false;
+        }
+    }
     public function __destruct()
     {
-        unset($this->db)
+        unset($this->db);
     }
 
 }
