@@ -7,7 +7,6 @@
  */
 
 
-namespace Tools;
 
 
 class Querie
@@ -33,11 +32,11 @@ class Querie
     public function selectMethod($sql)
     {
 
-        if (!empty($sql)) {
+        if (strlen($sql) >0 || !empty($sql)) {
 
-            $this->db->prepare($sql);
-            $this->db->execute();
-            return $this->db->fetchAll();
+            $result = $this->db->prepare($sql);
+            $result->execute();
+            return $result->fetchAll();
 
         }
 
