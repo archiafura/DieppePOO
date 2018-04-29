@@ -6,6 +6,9 @@ date_default_timezone_set('Europe/Paris');
 require_once "./function/classAutoLoader.php";
 spl_autoload_register('classAutoLoader');
 
+require_once "./classes/Log.php";
+spl_autoload_register('Log');
+
 
 
 
