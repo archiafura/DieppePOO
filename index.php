@@ -14,10 +14,12 @@ spl_autoload_register('Log');
 
 
 
-$inscr = new inscription();
+$inscr = new Inscription();
 
 echo $inscr->input('nom');
 echo $inscr->input('pseudo');
+echo $inscr->input('adresse');
+
 echo $inscr->submit();
 
 
