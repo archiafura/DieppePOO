@@ -20,6 +20,8 @@ echo $inscr->input('nom');
 echo $inscr->input('pseudo');
 echo $inscr->input('adresse');
 echo $inscr->input('code postal');
+echo $inscr->select('genre');
+
 
 
 echo $inscr->submit();
