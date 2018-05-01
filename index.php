@@ -19,10 +19,10 @@ $inscr = new Inscription();
 echo $inscr->input('nom');
 echo $inscr->input('pseudo');
 echo $inscr->input('adresse');
+echo $inscr->input('code postal');
+
 
 echo $inscr->submit();
-
-
 
 /*
 define('INI_FILE', 'inscription.ini');
