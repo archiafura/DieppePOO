@@ -1,9 +1,21 @@
 <?php
+require_once "./function/classAutoLoader.php";
+spl_autoload_register('classAutoLoader');
 
+define("PATHCONF", "./conf/");
+
+$test = new Formulaire(PATHCONF, "inscription");
+
+
+echo $test->frmGenerate("form.php");
+
+
+
+/*
 define("PATHCONF", "./conf/");
 date_default_timezone_set('Europe/Paris');
 
-require_once "./classes/inscription.php";
+require_once "./classes/Formulaire.php";
 
 
 require_once "./function/classAutoLoader.php";
@@ -47,8 +59,8 @@ $option = isset($ini['Option']) ? trim($ini['Option']) : '';
 
 */
 
-
-$test = new Form(PATHCONF, "inscription");
+/*
+$test = new Formulaire(PATHCONF, "inscription");
 $test->frmGenerate();
 
 
