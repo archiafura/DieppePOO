@@ -9,7 +9,9 @@ $test = new Formulaire(PATHCONF, "inscription");
 
 echo $test->frmGenerate("form.php");
 
+$essai = new Formulaire(PATHCONF, "inscusers");
 
+echo $essai->frmGenerate("form.php");
 
 /*
 define("PATHCONF", "./conf/");

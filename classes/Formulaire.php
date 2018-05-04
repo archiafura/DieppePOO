@@ -23,7 +23,7 @@ class Formulaire
 
             $form .= "<div>";
 
-            if (isset($content['name']) && $content['type'] != 'hidden') {
+            if (isset($content['name']) && $content['type'] != 'hidden' && $content['type'] != 'reset') {
                 $form .= "<label for='" . $content['name'] . "'>";
                 $form .= ucfirst($content['name']);
                 $form .= "&nbsp;: ";
